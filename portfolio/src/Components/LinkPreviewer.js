@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_KEY = "a9054ef8c98acba5bddd0d19048a7fb3"; // Get a free key from https://www.linkpreview.net/
+const API_KEY = process.env.REACT_APP_LINKPREVIEW_KEY; // Get a free key from https://www.linkpreview.net/
 
 const LinkPreview = ({ url }) => {
   const [data, setData] = useState(null);

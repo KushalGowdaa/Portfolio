@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
-const SERVICE_ID = "service_4tmkuvo";
-const TEMPLATE_ID = "template_fbd3w6h";
-const USER_ID = "wl5UncScPuVXtGGI6"; // EmailJS public key
+const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_EMAILJS_USER_ID; // EmailJS public key
 
 const Contact = ({ show, onClose }) => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
