@@ -24,7 +24,7 @@ const Experience = () => {
             skills: ["Python", "Django", "Flask", "SQL", "MVC", "OAuth", "REST API", "Git", "GitHub"],
             description : [
                 "Built web apps with Django and Flask, applying MVC patterns and RESTful APIs",
-                "ntegrated OAuth authentication for secure access and gained expertice in database management and sql shell",
+                "Integrated OAuth authentication for secure access and gained expertice in database management and sql shell",
                 "Led a team to develop a price comparison website"
             ]
         }
