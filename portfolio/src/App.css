@@ -224,13 +224,12 @@ nav{
 }
 
 .skill{
-  padding: 6px;
-  font-size: 15px;
-  margin: 0px;
-  border: solid 1px blue;
-  border-radius: 25px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  background-color:#e3eaff;
+  border-radius: 8px;
+  padding: 4px 10px;
+  color: #0070f3;
+  margin-right: 10px ;
+  margin-bottom: 10px;
 }
 
 .accordion-item {
@@ -288,9 +287,10 @@ nav{
 }
 
 .tech {
-  border: solid 1px blue;
-  border-radius: 25px;
-  padding: 6px;
+  /* border: solid 2px blue; */
+  background-color:#e3eaff;
+  border-radius: 8px;
+  padding: 4px 10px;
   color: #0070f3;
 }
 
@@ -301,6 +301,9 @@ nav{
 .project-features{
   font-size: 14px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 28px;
+  font-weight: 600;
+  list-style-type:disc;
 }
 
 .Project-list-container{

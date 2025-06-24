@@ -3,7 +3,7 @@ import { useState } from "react";
 import ProfilePic from "../images/newProfile.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGitAlt, faGithub, faJava, faJs, faNodeJs, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
-import { faBolt, faChevronDown, faChevronUp, faDatabase, faLeaf, faNetworkWired, faRocket, faServer, faTowerBroadcast, faUpRightFromSquare, faDiagramProject } from "@fortawesome/free-solid-svg-icons";
+import { faBolt, faChevronDown, faChevronUp, faDatabase, faLeaf, faNetworkWired, faRocket, faServer, faTowerBroadcast, faUpRightFromSquare, faDiagramProject, faGlobe, faB, faDrawPolygon } from "@fortawesome/free-solid-svg-icons";
 import {motion, AnimatePresence} from "framer-motion";
 import LinkPreview from "./LinkPreviewer";
 
@@ -148,6 +148,15 @@ const Projects = () => {
                                                                     )}
                                                                     {tech === "Web-socket" && (
                                                                         <FontAwesomeIcon icon={faTowerBroadcast} style={{color: "#0000ff",}} /> 
+                                                                    )}
+                                                                    {tech === "RapidAPI" && (
+                                                                        <FontAwesomeIcon icon={faGlobe} style={{color: "#0000ff",}} /> 
+                                                                    )}
+                                                                    {tech === "Bootstrap" && (
+                                                                        <FontAwesomeIcon icon={faB} style={{color: "#0000ff",}} /> 
+                                                                    )}
+                                                                    {tech === "Render" && (
+                                                                        <FontAwesomeIcon icon={faDrawPolygon} style={{color: "#0000ff",}} /> 
                                                                     )}
                                                                     {" " + tech}
                                                                 </li>

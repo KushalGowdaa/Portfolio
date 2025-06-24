@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGitAlt, faGithub, faJava, faJs, faNodeJs, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faB, faBolt, faCode, faDatabase, faDrawPolygon, faGlobe, faLeaf, faNetworkWired, faRocket, faServer, faShield } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
 const Experience = () => {
@@ -8,7 +11,7 @@ const Experience = () => {
             company: "Tech Fortune Technologies",
             startTime: "Jan 2025",
             endTime: "May 2025",
-            skills: ["Core and advanced Java", "Spring", "Spring Boot", "SQL", "MVC", "Multi Threading", "SDLC", "Git", "GitHub"],
+            skills: ["Core and advanced Java", "JavaScript", "Spring", "Spring Boot", "SQL","REST API", "MVC", "Multi Threading", "SDLC", "Git", "GitHub"],
             description : [
                 "Developed a full-stack web application using Java, Spring Boot, MySQL, and React.js with MVC architecture and RESTful APIs.",
                 "Implemented features like role-based access, dynamic forms, and real-time calling and views, ensuring robust functionality through active debugging.",
@@ -21,7 +24,7 @@ const Experience = () => {
             company: "Capgemini | ICT Academy",
             startTime: "Sep 2024",
             endTime: "Nov 2024",
-            skills: ["Python", "Django", "Flask", "SQL", "MVC", "OAuth", "REST API", "Git", "GitHub"],
+            skills: ["Python", "Django", "Flask", "SQL", "MVC", "OAuth", "React.js", "REST API", "Git", "GitHub"],
             description : [
                 "Built web apps with Django and Flask, applying MVC patterns and RESTful APIs",
                 "Integrated OAuth authentication for secure access and gained expertice in database management and sql shell",
@@ -48,9 +51,41 @@ const Experience = () => {
                                         <div className="exp-type-cont"><span className="exp-type">{exp.type}</span></div>
                                         <div className="exp-company">{exp.company}</div>
                                         <div className="exp-skills">
-                                            {exp.skills.map((skill, i) => (
-                                                <span className="exp-skill" key={i}>{skill}</span>
-                                            ))}
+                                            {exp.skills.map((skill, i) => {
+                                                let icon = null;
+                                                if (skill === "React.js") {
+                                                    icon = <FontAwesomeIcon icon={faReact} style={{color: "#63E6BE"}} />;
+                                                } else if (skill === "Core and advanced Java") {
+                                                    icon = <FontAwesomeIcon icon={faJava} style={{color: "#7143f9"}} />;
+                                                } else if (skill === "Python") {
+                                                    icon = <FontAwesomeIcon icon={faPython} style={{color: "#7143f9"}} />;
+                                                } else if (skill === "JavaScript") {
+                                                    icon = <FontAwesomeIcon icon={faJs} style={{color: "#7143f9"}} />;
+                                                } else if (skill === "Spring Boot") {
+                                                    icon = <FontAwesomeIcon icon={faLeaf} style={{color: "#00b34d"}} />;
+                                                } else if (skill === "Spring") {
+                                                    icon = <FontAwesomeIcon icon={faLeaf} style={{color: "#00b34d"}} />;
+                                                } else if (skill === "Django") {
+                                                    icon = <FontAwesomeIcon icon={faRocket} style={{color: "#7143f9"}} />;
+                                                } else if (skill === "Node.js") {
+                                                    icon = <FontAwesomeIcon icon={faNodeJs} style={{color: "#00b34d"}} />;
+                                                } else if (skill === "REST API") {
+                                                    icon = <FontAwesomeIcon icon={faNetworkWired} style={{color: "#00b34d"}} />;
+                                                } else if (skill === "SQL") {
+                                                    icon = <FontAwesomeIcon icon={faDatabase} style={{color: "#00b34d"}} />;
+                                                }  else if (skill === "Git") {
+                                                    icon = <FontAwesomeIcon icon={faGitAlt} style={{color: "#f5ab0a"}} />;
+                                                } else if (skill === "GitHub") {
+                                                    icon = <FontAwesomeIcon icon={faGithub} style={{color: "#000000"}} />;
+                                                } else if (skill === "Multi Threading") {
+                                                    icon = <FontAwesomeIcon icon={faCode} style={{color: "#0000ff"}} />;
+                                                } 
+                                                return (
+                                                    <span className="exp-skill" key={i}>
+                                                        {icon} {skill}
+                                                    </span>
+                                                );
+                                            })}
                                         </div>
                                         <ul className="exp-desc">
                                             {exp.description.map((desc, i) => (
@@ -76,9 +111,34 @@ const Experience = () => {
                                         <div className="exp-type-cont"><span className="exp-type">{exp.type}</span></div>
                                         <div className="exp-company">{exp.company}</div>
                                         <div className="exp-skills">
-                                            {exp.skills.map((skill, i) => (
-                                                <span className="exp-skill" key={i}>{skill}</span>
-                                            ))}
+                                            {exp.skills.map((skill, i) => {
+                                                let icon = null;
+
+                                                if (skill === "React.js") {
+                                                    icon = <FontAwesomeIcon icon={faReact} style={{color: "#63E6BE"}} />;
+                                                } else if (skill === "Python") {
+                                                    icon = <FontAwesomeIcon icon={faPython} style={{color: "#7143f9"}} />;
+                                                } else if (skill === "Django") {
+                                                    icon = <FontAwesomeIcon icon={faRocket} style={{color: "#7143f9"}} />;
+                                                } else if (skill === "REST API") {
+                                                    icon = <FontAwesomeIcon icon={faNetworkWired} style={{color: "#00b34d"}} />;
+                                                } else if (skill === "SQL") {
+                                                    icon = <FontAwesomeIcon icon={faDatabase} style={{color: "#00b34d"}} />;
+                                                }  else if (skill === "Git") {
+                                                    icon = <FontAwesomeIcon icon={faGitAlt} style={{color: "#f5ab0a"}} />;
+                                                } else if (skill === "GitHub") {
+                                                    icon = <FontAwesomeIcon icon={faGithub} style={{color: "#000000"}} />;
+                                                } else if (skill === "OAuth") {
+                                                    icon = <FontAwesomeIcon icon = {faShield} style={{color:"0000ff"}}/>
+                                                }
+
+                                                return (
+                                                    <span className="exp-skill" key={i}>
+                                                        {icon} {skill}
+                                                    </span>
+                                                );
+                                                
+                                            })}
                                         </div>
                                         <ul className="exp-desc">
                                             {exp.description.map((desc, i) => (
