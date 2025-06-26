@@ -569,6 +569,10 @@ nav{
   padding: 24px 0;
 }
 
+.mobile-avatar-fixed {
+  display: none;
+}
+
 /* Animation */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(40px);}
@@ -584,6 +588,27 @@ nav{
 }
 
 @media (max-width: 768px) {
+  .mobile-avatar-fixed {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 2001;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-avatar-fixed img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
   .mobile-nav-container {
     position: fixed;
     left: 0;
@@ -808,6 +833,27 @@ nav{
 }
 
 @media (max-width: 500px) {
+
+  .mobile-avatar-fixed {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2001;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-avatar-fixed img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 
   .content {
     display: flex;
