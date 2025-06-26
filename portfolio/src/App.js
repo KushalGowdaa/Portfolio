@@ -8,6 +8,7 @@ import Experience from './Components/Experience';
 import { AnimatePresence, motion } from 'framer-motion';
 import MobileNav from './Components/MobileNav';
 import Contact from './Components/Contact';
+import profileAvatar from './images/profileAvatar.png';
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
     <div className="App">
         <nav>
             <div className="logo">
-                <h3 className="logo-img">KLG.</h3>
+                <img className="logo-img" src={profileAvatar} />
             </div>
             <div className="navigate">
                 <ul className="nav-links">
@@ -38,7 +39,7 @@ function App() {
                     <li className={activeSection === 'about' ? 'active' : ''} onClick={() => setActiveSection('about')} style={{cursor:"pointer"}}>About</li>
                     <li className={activeSection === 'projects' ? 'active' : ''} onClick={() => setActiveSection('projects')} style={{cursor:"pointer"}}>Projects</li>
                     <li className={activeSection === 'experience' ? 'active' : ''} onClick={() => setActiveSection('experience')} style={{cursor:"pointer"}}>Experience</li> 
-                    <li className="connect-btn" style={{cursor:"pointer"}} onClick={() => setShowContactModal(true)}>Connect</li>
+                    <li className="contact-btn" style={{cursor:"pointer"}} onClick={() => setShowContactModal(true)}>Connect</li>
                 </ul>
             </div>
         </nav>

@@ -5,6 +5,7 @@
 nav, .nav-links {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-links li {
@@ -63,9 +64,10 @@ nav{
 }
 
 .logo-img{
-  padding-left: 40px;
-  color: blue;
-  font-size: 25px;
+  margin-left: 40px;
+  width: 70px;
+  padding-top: 8px;
+  border-radius: 50%;
 }
 
 .navigate{

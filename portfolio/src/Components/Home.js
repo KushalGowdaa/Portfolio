@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-
 import ProfilePic from "../images/newProfile.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDownload, faEnvelope} from "@fortawesome/free-solid-svg-icons";
@@ -7,6 +6,7 @@ import {faLinkedin, faSquareGithub} from "@fortawesome/free-brands-svg-icons";
 import useTypingEffect from "../hooks/useTypingEffect";
 import resume from "../Resume/Kushal_Resume.pdf";
 import Contact from "./Contact";
+
 
 const Home = () => {
 
@@ -31,9 +31,9 @@ const Home = () => {
                             <span className='cursor'></span>
                         </p>
                         <div className='btn-container'>
-                            <button style={{cursor:"pointer"}} onClick={() => setShowContactModal(true)}><FontAwesomeIcon icon={faEnvelope} size="lg"/> Connect</button>
+                            <button style={{border:"none"}} onClick={() => setShowContactModal(true)}><FontAwesomeIcon icon={faEnvelope} size="lg"/> Connect</button>
                             <a href={resume} target="_blank" download="Kushal_resume.pdf">
-                                <button><FontAwesomeIcon icon={faDownload} size="lg"/> Resume</button>
+                                <button style={{cursor:"pointer", border:"none"}}><FontAwesomeIcon icon={faDownload} size="lg"/> Resume</button>
                             </a>
                         </div>
                         <div className='socials'>
