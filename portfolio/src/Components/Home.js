@@ -45,7 +45,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='col2'>
-                    <img className='profile-pic' src={ProfilePic} />
+                    <img className='profile-pic' src={ProfilePic} loading="lazy" />
                 </div>
             </div>
             <Contact show = {showContactModal} onClose={() => setShowContactModal(false)}/>

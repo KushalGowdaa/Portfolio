@@ -34,7 +34,7 @@ function App() {
         <div className="App">
             <nav>
                 <div className="logo">
-                    <img className="logo-img" src={profileAvatar} />
+                    <img className="logo-img" src={profileAvatar}/>
                 </div>
                 <div className="navigate">
                     <ul className="nav-links">
