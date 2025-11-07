@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import ProfilePic from "../images/newProfile.jpg";
+// import ProfilePic from "../images/professional image.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGitAlt, faGithub, faJava, faJs, faNodeJs, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
 import { faBolt, faChevronDown, faChevronUp, faDatabase, faLeaf, faNetworkWired, faRocket, faServer, faTowerBroadcast, faUpRightFromSquare, faDiagramProject, faGlobe, faB, faDrawPolygon } from "@fortawesome/free-solid-svg-icons";
@@ -173,7 +173,7 @@ const Projects = () => {
                                                     </ul>
                                                     <p className="project-output">{projectDesc.Output}</p>
                                                     <p className="project-link-container">
-                                                        <a href={projectDesc.liveLink} className="live-link-btn" target="_blank">
+                                                        <a href={projectDesc.liveLink} className="live-link-btn" target="_blank" rel="noreferrer">
                                                             {
                                                                 projectName === 'Pricely' && (
                                                                     <span>See it Live <FontAwesomeIcon icon={faUpRightFromSquare} color="#0000f"/></span>

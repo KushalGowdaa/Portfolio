@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import ProfilePic from "../images/newProfile.jpg";
+import ProfilePic from "../images/professional image.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDownload, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {faLinkedin, faSquareGithub} from "@fortawesome/free-brands-svg-icons";
 import useTypingEffect from "../hooks/useTypingEffect";
-import resume from "../Resume/Kushal_Resume.pdf";
+import resume from "../Resume/Kushal_L_Gowda.pdf";
 import Contact from "./Contact";
 
 
@@ -32,20 +32,20 @@ const Home = () => {
                         </p>
                         <div className='btn-container'>
                             <button style={{border:"none"}} onClick={() => setShowContactModal(true)}><FontAwesomeIcon icon={faEnvelope} size="lg"/> Connect</button>
-                            <a href={resume} target="_blank" download="Kushal_resume.pdf">
+                            <a href={resume} target="_blank" rel="noreferrer" download="Kushal_resume.pdf">
                                 <button style={{cursor:"pointer", border:"none"}}><FontAwesomeIcon icon={faDownload} size="lg"/> Resume</button>
                             </a>
                         </div>
                         <div className='socials'>
                                     
-                            <li><a href={LinkedInUrl} target='_blank'><FontAwesomeIcon icon={faLinkedin} style={{color: "#0a66c2",}}  /></a></li>
-                            <li><a href={gitHubUrl} target='_blank'><FontAwesomeIcon icon={faSquareGithub}  style={{color: "#000000",}} /></a></li>
+                            <li><a href={LinkedInUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} style={{color: "#0a66c2",}}  /></a></li>
+                            <li><a href={gitHubUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faSquareGithub}  style={{color: "#000000",}} /></a></li>
                             {/* <li><FontAwesomeIcon icon={faSquareGithub} style={{color: "#000000",}} /></li> */}
                         </div>
                     </div>
                 </div>
                 <div className='col2'>
-                    <img className='profile-pic' src={ProfilePic} loading="lazy" />
+                    <img className='profile-pic' alt="profileImage" src={ProfilePic} loading="lazy" />
                 </div>
             </div>
             <Contact show = {showContactModal} onClose={() => setShowContactModal(false)}/>

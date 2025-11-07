@@ -13,9 +13,10 @@ const Experience = () => {
             endTime: "May 2025",
             skills: ["Core and advanced Java", "JavaScript", "Spring", "Spring Boot", "SQL","REST API", "MVC", "Multi Threading", "SDLC", "Git", "GitHub"],
             description : [
-                "Developed a full-stack web application using Java, Spring Boot, MySQL, and React.js with MVC architecture and RESTful APIs.",
-                "Implemented features like role-based access, dynamic forms, and real-time calling and views, ensuring robust functionality through active debugging.",
-                "Collaborated in an Agile team, contributing to development and version control with Git and GitHub."
+                "Designed and developed a full-stack mentorship platform for students and mentors using Java, Spring Boot and MySQL, employing MVC architecture and RESTful APIs, demonstrating end-to-end ownership of API development, web-services implementation, and database design. ",
+                "Implemented a component-based UI using React.js with optimized rendering practices, integrated WebRTC for serverless live video calls",
+                "Created and integrated features such as role-based access, data forms, and dynamic views, while actively debugging across the stack to ensure smooth functionality.",
+                "Worked in an Agile environment managing code development, debugging, and version control using Git and GitHub.",
             ]
         },
         {

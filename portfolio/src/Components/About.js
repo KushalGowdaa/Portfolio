@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePic from "../images/newProfile.jpg";
+import ProfilePic from "../images/professional image.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBolt, faDatabase, faDownload, faEnvelope, faGift, faLeaf, faNetworkWired, faRocket, faServer} from "@fortawesome/free-solid-svg-icons";
 import {faLinkedin, faSquareGithub, faReact, faHtml5, faCss3Alt, faBootstrap, faJava, faNodeJs, faPython, faJs, faGit, faGitAlt, faGithub, faArtstation, faAws} from "@fortawesome/free-brands-svg-icons";
