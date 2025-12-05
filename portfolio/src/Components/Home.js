@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import ProfilePic from "../images/professional image.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDownload, faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import {faLinkedin, faSquareGithub} from "@fortawesome/free-brands-svg-icons";
+import {faLinkedin, faSquareGithub, faHackerrank} from "@fortawesome/free-brands-svg-icons";
 import useTypingEffect from "../hooks/useTypingEffect";
 import resume from "../Resume/Kushal_L_Gowda.pdf";
 import Contact from "./Contact";
@@ -19,6 +19,7 @@ const Home = () => {
 
     const LinkedInUrl = "https://www.linkedin.com/in/kushal-l-gowda-5984a7253/";
     const gitHubUrl = "https://github.com/KushalGowdaa";
+    const hackerrankUrl = "https://www.hackerrank.com/profile/kushallgowda97"; 
 
     return (
         <div className='content-container'>
@@ -40,7 +41,8 @@ const Home = () => {
                                     
                             <li><a href={LinkedInUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} style={{color: "#0a66c2",}}  /></a></li>
                             <li><a href={gitHubUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faSquareGithub}  style={{color: "#000000",}} /></a></li>
-                            {/* <li><FontAwesomeIcon icon={faSquareGithub} style={{color: "#000000",}} /></li> */}
+                            <li><a href={hackerrankUrl} target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faHackerrank} style={{color: "#00c278",}} /></a></li>
+                            
                         </div>
                     </div>
                 </div>
