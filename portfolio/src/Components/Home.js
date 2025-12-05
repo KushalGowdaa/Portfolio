@@ -26,7 +26,7 @@ const Home = () => {
             <div className='content'>
                 <div className='col1'>
                     <div className='Intro'>
-                        <p><span style={{color: "blue", fontSize:"60px"}}>Hello</span>,<br/><span className='name'>I'm Kushal Gowda</span></p>
+                        <p><span style={{color: "blue", fontSize:"60px", fontWeight: "600"}}>Hello there,</span><br/><span className='name'>I'm Kushal Gowda</span></p>
                         <p className="my-specs">
                             {typingText}
                             <span className='cursor'></span>
