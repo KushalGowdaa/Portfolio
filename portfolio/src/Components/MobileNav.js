@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faCode, faProjectDiagram, faBriefcase, faEnvelope, faHandshake } from "@fortawesome/free-solid-svg-icons";
-import Contact from "./Contact";
+import { faHome, faUser, faProjectDiagram, faBriefcase, faHandshake } from "@fortawesome/free-solid-svg-icons";
 
 const MobileNav = ({activeSection, setActiveSection}) => {
     return (

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { useState, useEffect } from "react";
 
 function useTypingEffect(words, typingSpeed = 100, erasingSpeed = 50, delay = 1500) {

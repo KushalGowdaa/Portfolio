@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Home from './Components/Home';
 import About from './Components/About';
@@ -34,7 +34,7 @@ function App() {
         <div className="App">
             <nav>
                 <div className="logo">
-                    <img className="logo-img" src={profileAvatar}/>
+                    <img className="logo-img" alt='Logo' src={profileAvatar}/>
                 </div>
                 <div className="navigate">
                     <ul className="nav-links">
