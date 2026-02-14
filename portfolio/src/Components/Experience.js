@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGitAlt, faGithub, faJava, faJs, faNodeJs, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
-import { faB, faBolt, faCode, faDatabase, faDrawPolygon, faGlobe, faLeaf, faNetworkWired, faRocket, faServer, faShield } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faDatabase,  faLeaf, faNetworkWired, faRocket, faShield } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
 const Experience = () => {

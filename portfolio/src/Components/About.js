@@ -1,10 +1,9 @@
 import React from "react";
-import ProfilePic from "../images/professional image.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBolt, faDatabase, faDownload, faEnvelope, faGift, faLeaf, faNetworkWired, faRocket, faServer} from "@fortawesome/free-solid-svg-icons";
-import {faLinkedin, faSquareGithub, faReact, faHtml5, faCss3Alt, faBootstrap, faJava, faNodeJs, faPython, faJs, faGit, faGitAlt, faGithub, faArtstation, faAws} from "@fortawesome/free-brands-svg-icons";
+import {faBolt, faDatabase, faLeaf, faNetworkWired, faRocket, faServer} from "@fortawesome/free-solid-svg-icons";
+import { faReact, faHtml5, faCss3Alt, faBootstrap, faJava, faNodeJs, faPython, faJs, faGitAlt, faGithub, faArtstation, faAws} from "@fortawesome/free-brands-svg-icons";
 import {motion} from "framer-motion";
-import useTypingEffect from "../hooks/useTypingEffect";
+
 
 const About = () => {
 
